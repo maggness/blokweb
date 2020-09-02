@@ -64,8 +64,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s):**
 
-![Site vormgeving](images/siteVormgeving.jpg),
-![Passie project](images/blind.jpg)
+![Site vormgeving](images/siteVormgeving.jpg)
+![Passie project](images/blind.png)
 
 **Breakdown-schets(en):**
 

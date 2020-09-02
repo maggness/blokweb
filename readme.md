@@ -60,12 +60,11 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Je focus:** Responsive
 
-**Je opdracht:** Ik wil mijn website van vormgeving van het propedeuse jaar maken met als content informatie over mijn passie project wat ook van het propedeuse jaar is. De content is er al en voor de vormgeving hoef ik maar een paar dingen te verzinnen.
+**Je opdracht:** Ik kies voor het beter Responsive maken van de website van spotify
 
 **Screenshot(s):**
 
-![Site vormgeving](images/Vormgeving.jpg)
-![Passie project](images/blind.png)
+![Site spotify](images/spotify.jpg)
 
 **Breakdown-schets(en):**
 

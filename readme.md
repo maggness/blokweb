@@ -64,8 +64,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s):**
 
-![Site spotify](images/spotify.jpg)
+![Site spotify](images/spotify.png)
 
 **Breakdown-schets(en):**
 
-![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/dummy-image.svg)
+![Breakdownschets 1](images/spotifysitefull.png)
+![Breakdownschets 2](images/spotifysitedeel.png)

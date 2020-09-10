@@ -1,5 +1,138 @@
 /* CSS Document */
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing:border-box;
 }
 
+/* header */
+
+header {
+  position: relative;
+  background-color: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3.3em;
+  margin: -0.5em;
+  z-index: 100;
+}
+
+header ul {
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: -0.4em;
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+header ul li:first-of-type {
+  margin-right: auto;
+  margin-left: -1.1em;
+}
+
+header ul li:nth-of-type(2){
+  color: white;
+  list-style-type: none;
+  margin: 0 2.8em 0em 0em;
+}
+
+header ul li:nth-of-type(3){
+  color: white;
+  list-style-type: none;
+  margin: 0 0.4em 0em 0em;
+}
+
+header ul li {
+  color: white;
+  list-style-type: none;
+}
+
+header ul li:first-of-type img {
+  width: 5.6em;
+}
+
+header ul li:nth-of-type(2) img {
+  width: 2.2em;
+  border-radius: 50%;
+}
+
+header ul li:nth-of-type(3) img {
+  width: 2.5em;
+  border-radius: 50%;
+}
+
+/* hamburger menu */
+
+#burgermenu {
+  z-index: 50;
+  height: 4.5em;
+  height: 0.3em;
+  width: 1.7em;
+  position: absolute;
+  margin: 0 0 0 -2em;
+}
+
+.burger1 {
+  top: -0.8em;
+  position: absolute;
+  background-color: white;
+  height: 0.2em;
+  width: 1.4em;
+  transition: 0.5s;
+
+}
+
+.burger1rot {
+transform: rotate(-50deg);
+position: absolute;
+background-color: white;
+height: 0.2em;
+width: 1.4em;
+transition: 0.5s;
+top: -0.3em;
+
+}
+
+.burger2 {
+  top: -0.3em;
+  position: absolute;
+  background-color: white;
+  height: 0.2em;
+  width: 1.4em;
+  transition: 0.5s;
+}
+
+.burger2rot {
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.burger3 {
+  top: 0.2em;
+  position: absolute;
+  background-color: white;
+  height: 0.2em;
+  width: 1.4em;
+  transition: 0.5s;
+}
+
+.burger3rot {
+  transform: rotate(50deg);
+  position: absolute;
+  background-color: white;
+  height: 0.2em;
+  width: 1.4em;
+  transition: 0.5s;
+  top: -0.3em;
+}
+
+/* main */
+
+main section:first-of-type {
+  background-color: #9b7eb2;
+  background-image: linear-gradient(#9b7eb2, black 140%);
+  height: 33em;
+  margin: -1em;
+}

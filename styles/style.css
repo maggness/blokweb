@@ -195,3 +195,24 @@ main section:first-of-type button {
   margin: 2em 0;
   font-weight: 400;
 }
+
+/* test klapmenu */
+
+.klapmenudicht {
+  position: fixed;
+  z-index: 49;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #00000010;
+  transition: .2s;
+  transform: translateX(20em);
+}
+
+.klapmenuopen {
+  transition: .2s;
+  background-color: #000000;
+  transform: translateX(0em);
+}

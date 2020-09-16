@@ -40,8 +40,8 @@ Het is soms wel even kijken om het goed responsive te krijgen, maar tot nu toe i
 
 **Screenshot(s):**
 
-![Progressie 16/9/2020](images/prog1.png)
-![Progressie 16/9/2020](images/prog2.png)
+![Progressie 16/9/2020](images/prog1.PNG)
+![Progressie 16/9/2020](images/prog2.PNG)
 
 ### Agenda voor meeting
 

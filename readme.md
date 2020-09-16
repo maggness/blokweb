@@ -1,14 +1,11 @@
 # Procesverslag
 **Auteur:** Tim de Roller
 
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
-
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. https://www.w3schools.com/
+2. de lessen
 
 
 
@@ -38,11 +35,13 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+16/9/2020 Toen ik begon was het weer even in komen, heb in de vakantie niet veel geprogrammeerd dus het was weer even wennen. Maar door de lessen was het wel weer beetje bijgekomen.
+Het is soms wel even kijken om het goed responsive te krijgen, maar tot nu toe is het goed gelukt.
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent-
+![Progressie 16/9/2020](images/prog1.png)
+![Progressie 16/9/2020](images/prog2.png)
 
 ### Agenda voor meeting
 

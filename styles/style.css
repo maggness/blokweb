@@ -204,6 +204,7 @@ main section:first-of-type p {
 }
 
 main section:first-of-type h1 {
+  max-width: 7em;
   font-size: 3em;
   text-align: center;
   line-height: 1.2;
@@ -266,6 +267,7 @@ main section:nth-of-type(2) li p:first-of-type {
   color: #919496;
   font-size: 0.68em;
   margin: 1em 0 0 0;
+  font-weight: 600;
 }
 
 main section:nth-of-type(2) li p:nth-of-type(2) {

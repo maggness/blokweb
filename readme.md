@@ -45,7 +45,7 @@ Het is soms wel even kijken om het goed responsive te krijgen, maar tot nu toe i
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
+Vraag stellen over side scrollen voor de album foto's
 
 ### Verslag van meeting
 

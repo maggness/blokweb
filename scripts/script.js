@@ -5,6 +5,8 @@ var burger2 = document.querySelector('#burger2');
 var burger3 = document.querySelector('#burger3');
 var burgermenu = document.querySelector('#burgermenu');
 var burgermenuklap = document.querySelector('#menu');
+var easter = document.querySelector('#easter');
+var body = document.body;
 
 function burgerMenuPress() {
   burger1.classList.toggle('burger1rot');
@@ -13,4 +15,9 @@ function burgerMenuPress() {
   burgermenuklap.classList.toggle('klapmenuopen');
 }
 
+function easterEgg() {
+  body.classList.toggle('easter');
+}
+
 burgermenu.addEventListener("click", burgerMenuPress);
+easter.addEventListener("click", easterEgg);

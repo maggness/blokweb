@@ -4,6 +4,7 @@
 }
 
 body {
+  transition: 1s;
   font-family: 'Kumbh Sans', sans-serif;
   color: #fff;
   margin: 0;
@@ -11,6 +12,10 @@ body {
   left: 0;
 }
 
+.easter {
+  transition: 1s;
+  transform: rotate(180deg);
+}
 
 /* header */
 
@@ -237,16 +242,13 @@ main section:first-of-type button {
 /* 2e section */
 
 main section:nth-of-type(2){
-  /* position: absolute;
-  left: -1.5em; */
-  /* bottom: 23.3em; */
   margin: 0;
 }
 
 main ul {
   height:16em;
-  width: 100%;
-  /* position: absolute; */
+  width: 112%;
+  margin: 0 0 0 -1.4em;
   display: flex;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -268,7 +270,7 @@ main li img {
 
 main li p:first-of-type {
   color: #919496;
-  font-size: 0.68em;
+  font-size: 0.6em;
   margin: 1em 0 0 0;
   font-weight: 600;
 }

@@ -45,19 +45,18 @@ Het is soms wel even kijken om het goed responsive te krijgen, maar tot nu toe i
 
 ### Agenda voor meeting
 
-Vraag stellen over side scrollen voor de album foto's
+1e, saphia met een vraag over de nav
+2e, Vraag stellen over side scrollen voor de album foto's
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
-
-
+We zijn begonnen met de meeting en hebben het gehad over de vragen
 
 ## Intake (week 1)
 
 **Je startniveau:** Rood
 
-**Je focus:** Responsive
+**Je focus:** surface
 
 **Je opdracht:** Ik kies voor het beter Responsive maken van de website van spotify
 

@@ -16,7 +16,13 @@ function burgerMenuPress() {
 }
 
 function easterEgg() {
-  body.classList.toggle('easter');
+  body.classList.add('easter');
+
+  setTimeout(function () {
+    body.classList.remove('easter');
+  },
+  4000
+);
 }
 
 burgermenu.addEventListener("click", burgerMenuPress);

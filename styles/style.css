@@ -13,8 +13,90 @@ body {
 }
 
 .easter {
-  transition: 1s;
-  transform: rotate(180deg);
+  animation: egg 4s;
+}
+
+@keyframes egg {
+  0% {
+    transform: rotate3d(0, 0, 0, 0deg) scale(1);
+  }
+  50%{
+     transition: scale(0.1);
+  }
+  100%{
+    transform: rotate3d(1, 1, 1, 360deg) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .easter {
+
+  }
+
+
+  .burger1 {
+    top: -0.8em;
+    position: absolute;
+    background-color: white;
+    height: 0.2em;
+    width: 1.4em;
+
+  }
+
+  .burger1rot {
+    transform: rotate(-50deg);
+    position: absolute;
+    background-color: white;
+    height: 0.2em;
+    width: 1.4em;
+    top: -0.3em;
+  }
+
+  .burger2 {
+    top: -0.3em;
+    position: absolute;
+    background-color: white;
+    height: 0.2em;
+    width: 1.4em;
+  }
+
+  .burger2rot {
+    opacity: 0;
+  }
+
+  .burger3 {
+    top: 0.2em;
+    position: absolute;
+    background-color: white;
+    height: 0.23em;
+    width: 1.4em;
+  }
+
+  .burger3rot {
+    transform: rotate(50deg);
+    position: absolute;
+    background-color: white;
+    height: 0.2em;
+    width: 1.4em;
+    top: -0.3em;
+  }
+
+  .klapmenudicht {
+    position: fixed;
+    z-index: 49;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #00000010;
+    transform: translateX(100%);
+  }
+
+  .klapmenuopen {
+    background-color: #000000;
+    transform: translateX(0em);
+  }
 }
 
 /* header */
@@ -109,14 +191,13 @@ header nav img {
 }
 
 .burger1rot {
-transform: rotate(-50deg);
-position: absolute;
-background-color: white;
-height: 0.2em;
-width: 1.4em;
-transition: 0.5s;
-top: -0.3em;
-
+  transform: rotate(-50deg);
+  position: absolute;
+  background-color: white;
+  height: 0.2em;
+  width: 1.4em;
+  transition: 0.5s;
+  top: -0.3em;
 }
 
 .burger2 {
@@ -174,6 +255,8 @@ top: -0.3em;
 
 /* main */
 
+/* 1e section */
+
 .backgroundS1 {
   z-index: 1;
   justify-content: center;
@@ -185,9 +268,6 @@ top: -0.3em;
   height: 50em;
   margin: 0;
 }
-
-
-/* 1e section */
 
 main section:first-of-type {
   justify-content: center;
@@ -245,7 +325,7 @@ main section:nth-of-type(2){
   margin: 0;
 }
 
-main ul {
+main div:first-of-type ul {
   height:16em;
   width: 112%;
   margin: 0 0 0 -1.4em;
@@ -254,7 +334,7 @@ main ul {
   overflow-y: hidden;
 }
 
-main li {
+main div:first-of-type ul li {
   display: flex;
   font-size: 2em;
   flex-basis: 10%;
@@ -263,22 +343,136 @@ main li {
   margin: 0 0.6em 0 0;
 }
 
-main li img {
+main div:first-of-type ul li:last-of-type {
+  padding: 0 0.6em 0em 0;
+}
+
+main div:first-of-type ul li img {
   width: 4.7em;
   height: 4.7em;
 }
 
-main li p:first-of-type {
+main div:first-of-type ul li p:first-of-type {
   color: #919496;
   font-size: 0.6em;
   margin: 1em 0 0 0;
   font-weight: 600;
+  width: 8em;
+  padding: 0 0.6em 0em 0;
+  text-align: center;
+  /* voor de ... omdat het te lang is */
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-main li p:nth-of-type(2) {
+main div:first-of-type ul:first-of-type li p:nth-of-type(2) {
+  font-size: 0.5em;
+  margin: 1em 0 0 0;
+  color: #fff;
+  font-weight: 300;
+}
+
+main div:first-of-type ul:first-of-type li p:nth-of-type(3) {
   font-size: 0.5em;
   margin: 1em 0 0 0;
   color: #1DB954;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+/* 3e section */
+
+.backgroundS3 {
+  z-index: 1;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  background-image: linear-gradient(#2c5e92, #9b7eb2 100%);
+  height: 100%;
+  margin: 0;
+}
+
+main section:nth-of-type(2){
+  margin: 0;
+}
+ main div:nth-of-type(2) h1 {
+   text-align: center;
+   padding: 2em 0 1em 0;
+ }
+
+main div:nth-of-type(2) ul {
+  width: 90%;
+  margin: 0 0 0 -1.4em;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  flex-direction: column;
+  position: relative;
+  bottom: 3em;
+  transform: scale(1.1);
+}
+
+main div:nth-of-type(2) ul li {
+  display: flex;
+  font-size: 2em;
+  flex-basis: 10%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1em 0.78em 3em 0;
+  position: relative;
+}
+
+main div:nth-of-type(2) ul li img {
+  z-index: 2;
+  width: 4.7em;
+  height: 4.7em;
+}
+
+main div:nth-of-type(2) ul li p:first-of-type {
+  font-size: 0.35em;
+  margin: 1em 0 0.5em 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  background-color: #00000020;
+  width: 7em;
+}
+
+main div:nth-of-type(2) ul li p:nth-of-type(2) {
+  z-index: 2;
+  color: #fff;
+  font-size: 0.6em;
+  margin: 0;
+  font-weight: 600;
+  width: 14em;
+  text-align: center;
+  bottom: -1.7em;
+  background-color: #2d5e92;
+  padding: 0.5em 0em 0.5em 0em;
+  position: absolute;
+  /* voor de ... als het te lang is */
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+main div:nth-of-type(2) ul li p:nth-of-type(3) {
+  z-index: 1;
+  font-size: 0.4em;
+  margin: 1em 0 0em 0;
+  color: #1DB954;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: absolute;
+  text-align: center;
+  bottom: -5.2em;
+  background-color: #00000020;
+  width: 15em;
+  height: 14.4em;
+  padding: 12.6em 0 0 0;
 }

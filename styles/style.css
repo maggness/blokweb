@@ -33,14 +33,12 @@ body {
 
   }
 
-
   .burger1 {
     top: -0.8em;
     position: absolute;
     background-color: white;
     height: 0.2em;
     width: 1.4em;
-
   }
 
   .burger1rot {

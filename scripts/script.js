@@ -8,6 +8,13 @@ var burgermenuklap = document.querySelector('#menu');
 var easter = document.querySelector('#easter');
 var body = document.body;
 
+var bars = document.querySelector('#bars');
+var deur1a = document.querySelector('#deur1a');
+var deur1b = document.querySelector('#deur1b');
+var deur2a = document.querySelector('#deur2a');
+var deur2b = document.querySelector('#deur2b');
+
+
 function burgerMenuPress() {
   burger1.classList.toggle('burger1rot');
   burger2.classList.toggle('burger2rot');
@@ -16,12 +23,20 @@ function burgerMenuPress() {
 }
 
 function easterEgg() {
-  body.classList.add('easter');
+  bars.classList.add('barsanimatie');
+  deur1a.classList.add('deur1aanimatie');
+  deur1b.classList.add('deur1banimatie');
+  deur2a.classList.add('deur2aanimatie');
+  deur2b.classList.add('deur2banimatie');
 
   setTimeout(function () {
-    body.classList.remove('easter');
+    bars.classList.remove('barsanimatie');
+    deur1a.classList.remove('deur1aanimatie');
+    deur1b.classList.remove('deur1banimatie');
+    deur2a.classList.remove('deur2aanimatie');
+    deur2b.classList.remove('deur2banimatie');
   },
-  4000
+  8000
 );
 }
 

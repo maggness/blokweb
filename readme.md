@@ -50,10 +50,11 @@ Het is soms wel even kijken om het goed responsive te krijgen, maar tot nu toe i
 
 ### Agenda voor meeting
 
-Naomi: Javascript toepassen,+- 10 min.
-Tim: redused motion, animations activeren,+-10 min.
-Saphia: extra uitleg Grids responsive maken, formulieren, Javascript, +- 10 min.
-Joris: accordeon, loopen array videos,comments array +-10 min.
+Naomi: voorbeelden van states
+Tim: voorbeelden van states
+Saphia: afbeeldingen na h1, javascript
+Joris: naar code kijken effectief? +-10 min.
+Martine: naar code laten kijken
 
 ### Verslag van meeting
 

@@ -255,7 +255,7 @@ body {
 /* header */
 
 header {
-  position: relative;
+  position: fixed;
   background-color: black;
   top: 0;
   left: 0;
@@ -278,7 +278,7 @@ header ul {
 
 header ul li:first-of-type {
   margin-right: auto;
-  margin-left: -1.1em;
+  margin-left: -1.7em;
 }
 
 header ul li:nth-of-type(2){
@@ -410,7 +410,7 @@ header nav img {
 
 /* 1e section */
 
-.backgroundS1 {
+.section1 {
   z-index: 1;
   justify-content: center;
   display: flex;
@@ -422,7 +422,7 @@ header nav img {
   margin: 0;
 }
 
-main section:first-of-type {
+#page1 .section1 section:first-of-type {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
@@ -433,15 +433,16 @@ main section:first-of-type {
   right: 0;
 }
 
-main section:first-of-type p {
+#page1 .section1 section:first-of-type h1 {
   flex-basis: 40%;
   font-size: 0.8em;
   text-align: center;
   margin: 6em 0 0 0;
   top: 0em;
+  font-weight: 300;
 }
 
-main section:first-of-type h1 {
+#page1 .section1 section:first-of-type h2 {
   max-width: 7em;
   font-size: 3em;
   text-align: center;
@@ -449,15 +450,16 @@ main section:first-of-type h1 {
   margin: 0;
 }
 
-main section:first-of-type h3 {
+#page1 .section1 section:first-of-type p {
   font-size: 1.3em;
   text-align: center;
   margin: 0;
   line-height: 1.3;
   flex-basis: 90%;
+  font-weight: 600;
 }
 
-main section:first-of-type button {
+#page1 .section1 section:first-of-type button {
   font-family: 'Kumbh Sans', sans-serif;
   color: white;
   background-color: #1db954;
@@ -472,13 +474,13 @@ main section:first-of-type button {
 }
 
 
-/* 2e section */
+/* Ul */
 
-main section:nth-of-type(2){
+#page1 .section1 section:nth-of-type(2){
   margin: 0;
 }
 
-main div:first-of-type ul {
+#page1 .section1 ul {
   height:16em;
   width: 112%;
   margin: 0 0 0 -1.4em;
@@ -487,7 +489,11 @@ main div:first-of-type ul {
   overflow-y: hidden;
 }
 
-main div:first-of-type ul li {
+#page1 .section1 ul a {
+  text-decoration: none;
+}
+
+#page1 .section1 ul li {
   display: flex;
   font-size: 2em;
   flex-basis: 10%;
@@ -496,16 +502,17 @@ main div:first-of-type ul li {
   margin: 0 0.6em 0 0;
 }
 
-main div:first-of-type ul li:last-of-type {
-  padding: 0 0.6em 0em 0;
+#page1 .section1 ul li:last-of-type {
+  padding: 0;
 }
 
-main div:first-of-type ul li img {
+#page1 .section1 ul li img {
   width: 4.7em;
   height: 4.7em;
+  order: 	1;
 }
 
-main div:first-of-type ul li p:first-of-type {
+#page1 .section1 ul li h3:first-of-type {
   color: #919496;
   font-size: 0.6em;
   margin: 1em 0 0 0;
@@ -513,6 +520,7 @@ main div:first-of-type ul li p:first-of-type {
   width: 8em;
   padding: 0 0.6em 0em 0;
   text-align: center;
+  order: 2;
   /* voor de ... omdat het te lang is */
   display: block;
   text-overflow: ellipsis;
@@ -520,24 +528,26 @@ main div:first-of-type ul li p:first-of-type {
   overflow: hidden;
 }
 
-main div:first-of-type ul:first-of-type li p:nth-of-type(2) {
+#page1 .section1 ul:first-of-type li p:first-of-type {
   font-size: 0.5em;
   margin: 1em 0 0 0;
   color: #fff;
   font-weight: 300;
+  order: 3;
 }
 
-main div:first-of-type ul:first-of-type li p:nth-of-type(3) {
+#page1 .section1 ul:first-of-type li p:nth-of-type(2) {
   font-size: 0.5em;
   margin: 1em 0 0 0;
   color: #1DB954;
   text-transform: uppercase;
   font-weight: 700;
+  order: 4;
 }
 
 /* 3e section */
 
-.backgroundS3 {
+.section2 {
   z-index: 1;
   justify-content: center;
   display: flex;
@@ -548,16 +558,16 @@ main div:first-of-type ul:first-of-type li p:nth-of-type(3) {
   margin: 0;
 }
 
-main section:nth-of-type(2){
+#page1 .section2 section:nth-of-type(2){
   margin: 0;
 }
- main div:nth-of-type(2) h1 {
+#page1 .section2 h1 {
    text-align: center;
    padding: 2em 0 1em 0;
    width: 11em;
  }
 
-main div:nth-of-type(2) ul {
+#page1 .section2 ul {
   width: 90%;
   margin: 0 0 0 -1.4em;
   display: flex;
@@ -569,7 +579,11 @@ main div:nth-of-type(2) ul {
   transform: scale(1.1);
 }
 
-main div:nth-of-type(2) ul li {
+#page1 .section2 ul a {
+  text-decoration: none;
+}
+
+#page1 .section2 ul li {
   display: flex;
   font-size: 2em;
   flex-basis: 10%;
@@ -579,13 +593,14 @@ main div:nth-of-type(2) ul li {
   position: relative;
 }
 
-main div:nth-of-type(2) ul li img {
+#page1 .section2 ul li img {
   z-index: 2;
   width: 4.7em;
   height: 4.7em;
+  order: 3;
 }
 
-main div:nth-of-type(2) ul li p:first-of-type {
+#page1 .section2 ul li h2:first-of-type {
   font-size: 0.35em;
   margin: 1em 0 0.5em 0;
   color: #fff;
@@ -595,10 +610,11 @@ main div:nth-of-type(2) ul li p:first-of-type {
   width: 11em;
   height: 1.4em;
   text-align: center;
+  order: 1;
 }
 
-main div:nth-of-type(2) ul li p:nth-of-type(2) {
-  z-index: 2;
+#page1 .section2 ul li h3:first-of-type {
+  z-index: 3;
   color: #fff;
   font-size: 0.6em;
   margin: 0;
@@ -609,6 +625,7 @@ main div:nth-of-type(2) ul li p:nth-of-type(2) {
   background-color: #2d5e92;
   padding: 0.5em 0em 0.5em 0em;
   position: absolute;
+  order: 2;
   /* voor de ... als het te lang is */
   display: block;
   text-overflow: ellipsis;
@@ -617,7 +634,7 @@ main div:nth-of-type(2) ul li p:nth-of-type(2) {
 }
 
 
-main div:nth-of-type(2) ul li p:nth-of-type(3) {
+#page1 .section2 ul li p:first-of-type {
   z-index: 1;
   font-size: 0.4em;
   margin: 1em 0 0em 0;
@@ -631,4 +648,39 @@ main div:nth-of-type(2) ul li p:nth-of-type(3) {
   width: 15em;
   height: 14.4em;
   padding: 12.6em 0 0 0;
+  order: 4;
+}
+
+/* footer */
+
+footer {
+  background-color: black;
+}
+
+footer img:first-of-type {
+  width: 5.6em;
+  margin: 1em 0 0 0.8em;
+}
+
+footer ul {
+  line-height: 2.4em;
+  margin: 3em 0 0 0;
+  padding: 0 0 0 1em;
+}
+
+footer ul li {
+  list-style-type: none;
+}
+
+footer ul li:first-of-type {
+  font-size: 0.8em;
+  color: #919496;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+}
+
+footer ul li {
+  font-size: 1em;
+  font-weight: 400;
 }

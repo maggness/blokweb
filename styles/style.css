@@ -10,6 +10,7 @@ body {
   margin: 0;
   right: 0;
   left: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* bars */
@@ -284,7 +285,7 @@ header ul li:first-of-type {
 header ul li:nth-of-type(2){
   color: white;
   list-style-type: none;
-  margin: 0 2.8em 0em 0em;
+  margin: 0 2.6em 0em 0em;
 }
 
 header ul li:nth-of-type(3){
@@ -319,6 +320,17 @@ header nav img {
   position: absolute;
 }
 
+header #menu a {
+  width: 5.6em;
+  bottom: 4.1em;
+  font-size: 1.5em;
+  left: 1.5em;
+  top: 3em;
+  position: absolute;
+  color: white;
+  text-decoration: none;
+}
+
 
 /* hamburger menu */
 
@@ -338,7 +350,7 @@ header nav img {
   position: absolute;
   background-color: white;
   height: 0.2em;
-  width: 1.4em;
+  width: 1.6em;
   transition: 0.5s;
 
 }
@@ -348,7 +360,7 @@ header nav img {
   position: absolute;
   background-color: white;
   height: 0.2em;
-  width: 1.4em;
+  width: 1.6em;
   transition: 0.5s;
   top: -0.3em;
 }
@@ -358,7 +370,7 @@ header nav img {
   position: absolute;
   background-color: white;
   height: 0.2em;
-  width: 1.4em;
+  width: 1.6em;
   transition: 0.5s;
 }
 
@@ -372,7 +384,7 @@ header nav img {
   position: absolute;
   background-color: white;
   height: 0.23em;
-  width: 1.4em;
+  width: 1.6em;
   transition: 0.5s;
 }
 
@@ -381,7 +393,7 @@ header nav img {
   position: absolute;
   background-color: white;
   height: 0.2em;
-  width: 1.4em;
+  width: 1.6em;
   transition: 0.5s;
   top: -0.3em;
 }
@@ -410,7 +422,7 @@ header nav img {
 
 /* 1e section */
 
-.section1 {
+#page1 .section1 {
   z-index: 1;
   justify-content: center;
   display: flex;
@@ -545,7 +557,7 @@ header nav img {
   order: 4;
 }
 
-/* 3e section */
+/* 2e section */
 
 .section2 {
   z-index: 1;
@@ -607,7 +619,7 @@ header nav img {
   text-transform: uppercase;
   font-weight: 300;
   background-color: #00000020;
-  width: 11em;
+  width: 14em;
   height: 1.4em;
   text-align: center;
   order: 1;
@@ -651,6 +663,70 @@ header nav img {
   order: 4;
 }
 
+/* page 2
+section 1 */
+
+#page2 .section1 {
+  z-index: 1;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  background: url(https://support.scdn.co/web/_next/static/assets/6f8ae0e/search-mobile.webp) top/100% no-repeat #1c2963;
+  height: 38.5em;
+  margin: 0;
+}
+
+#page2 .section1 section:first-of-type h1 {
+  font-size: 2.8em;
+  margin: 2.3em 0.5em 0 0.5em;
+  font-weight: 700;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+/* #page2 .section1 section:first-of-type input {
+  width: 100%;
+} */
+
+input {
+  line-height: 3em;
+  padding: 0 1em;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 0.25em;
+  outline: none;
+  appearance: none;
+  width: 95%;
+  margin: 2em 0 0 0.6em;
+}
+
+input::placeholder {
+  color: #737373;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+/* styling voor search inputs */
+input[type="search"] {
+  position:relative;
+  padding:0 1em 0 2.5em;
+  background-image: url("../images/search.png");
+  background-repeat:no-repeat;
+  background-size:1.25em auto;
+  background-position:.75em center;
+}
+
+/* states voor alle inputs */
+input:hover {
+
+}
+
+input:focus {
+
+}
+
 /* footer */
 
 footer {
@@ -683,4 +759,8 @@ footer ul li:first-of-type {
 footer ul li {
   font-size: 1em;
   font-weight: 400;
+}
+
+footer ul:last-of-type{
+  padding: 0 0 5em 1em;
 }

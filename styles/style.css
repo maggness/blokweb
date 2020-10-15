@@ -3,6 +3,17 @@
   box-sizing:border-box;
 }
 
+/*
+Speciaal font voor DVD
+Bron: https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website */
+@font-face {
+    font-family: 'digitalsymbolsregular';
+    src: url('dvd-webfont.woff2') format('woff2'),
+         url('dvd-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
   transition: 1s;
   font-family: 'Kumbh Sans', sans-serif;
@@ -726,6 +737,96 @@ input:hover {
 input:focus {
 
 }
+
+.dvdDIV {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 106;
+  background-color: green;
+}
+
+.dvd {
+  position: absolute;
+  opacity: 0;
+}
+
+.dvdAnimatie {
+  margin: 0;
+  position: fixed;
+  font-family: 'digitalsymbolsregular', Arial, sans-serif;
+  font-size: 5em;
+  z-index: 101;
+  animation: dvd 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  opacity: 1;
+}
+
+@keyframes dvd {
+  0% {
+     transform: translate(0, 0);
+     color: blue;
+  }
+  10% {
+     transform: translate(calc(100vw - 42vw), calc(100vh - 8.7vh));
+     color: green;
+  }
+  17% {
+     transform: translate(calc(100vw - 100vw), calc(100vh - 50vh));
+     color: red;
+  }
+  26% {
+     transform: translate(calc(100vw - 42vw), calc(100vh - 91vh));
+     color: purple;
+  }
+  28% {
+     transform: translate(calc(100vw - 60vw), calc(100vh - 100vh));
+     color: blue;
+  }
+  39% {
+     transform: translate(calc(100vw - 100vw), calc(100vh - 47vh));
+     color: yellow;
+  }
+  47% {
+    transform: translate(calc(100vw - 42vw), calc(100vh - 13vh));
+    color: orange;
+  }
+  48.5% {
+     transform: translate(calc(100vw - 49vw), calc(100vh - 8.7vh));
+     color: red;
+  }
+  57% {
+     transform: translate(calc(100vw - 100vw), calc(100vh - 49.7vh));
+     color: purple;
+  }
+  62% {
+     transform: translate(calc(100vw - 42vw), calc(100vh - 71.7vh));
+     color: orange;
+  }
+  70% {
+     transform: translate(calc(100vw - 100vw), calc(100vh - 91.7vh));
+     color: green;
+  }
+  74% {
+     transform: translate(calc(100vw - 71vw), calc(100vh - 99.7vh));
+     color: pink;
+  }
+  80% {
+     transform: translate(calc(100vw - 42vw), calc(100vh - 77.7vh));
+     color: purple;
+  }
+  90% {
+     transform: translate(calc(100vw - 50vw), calc(100vh - 8.7vh));
+     color: red;
+  }
+  100% {
+    transform: translate(0, 0);
+    color: blue;
+  }
+}
+
+    /* transform: translate(calc(100vw - 97%), calc(100vh - 100%)) */
 
 /* footer */
 

@@ -749,18 +749,221 @@ input:focus {
 .dvd {
   position: absolute;
   opacity: 0;
+  font-family: 'digitalsymbolsregular', Arial, sans-serif;
 }
 
 .dvdAnimatie {
   margin: 0;
   position: fixed;
-  font-family: 'digitalsymbolsregular', Arial, sans-serif;
   font-size: 5em;
   z-index: 101;
   animation: dvd 40s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   opacity: 1;
+}
+
+#deLeukeDingen {
+  transition: 5s;
+  width: 100%;
+  height: 100%;
+}
+
+.starwars {
+  transition: 10s;
+  background-color: black;
+  z-index: 99;
+  position: fixed;
+}
+
+.saberStok {
+  animation: starwarsStok 100s;
+  animation-fill-mode: forwards;
+}
+
+.saberRechts {
+  animation: starwarsRechts 100s;
+  animation-fill-mode: forwards;
+}
+
+.saberLinks {
+  animation: starwarsLinks 100s;
+  animation-fill-mode: forwards;
+}
+
+.saberStoktest {
+  top: 0;
+  width: 23vw;
+  height: 0.5em;
+  transform: translate(-50vw, 47vh);
+  z-index: 2;
+  border-radius: 0.2em;
+  border: darkgray 1px solid;
+  background-color: gray;
+}
+
+.saberRechtstest {
+  top: 0;
+  width: 36vw;
+  height: 0.5em;
+  transform: translate(-28vw, 47vh);
+  background-color: red;
+  border-radius: 2em;
+  box-shadow: 0em 0em 1em red;
+  z-index: 1;
+}
+
+.saberLinkstest {
+  top: 0;
+  width: 36vw;
+  height: 0.5em;
+  transform: translate(-85vw, 47vh) scale(-1);
+  background-color: red;
+  border-radius: 2em;
+  box-shadow: 0em 0em 1em red;
+  z-index: 1;
+}
+
+@keyframes starwarsStok {
+  0% {
+    transform: translate( 0, 0);
+  }
+  50% {
+    top: 0;
+    width: 23vw;
+    height: 0.5em;
+    transform: translate(-50vw, 47vh);
+    z-index: 2;
+    border-radius: 0.2em;
+    border: darkgray 1px solid;
+    background-color: gray;
+  }
+  100% {
+    top: 0;
+    width: 23vw;
+    height: 0.5em;
+    transform: translate(-50vw, 47vh);
+    z-index: 2;
+    border-radius: 0.2em;
+    border: darkgray 1px solid;
+    background-color: gray;
+  }
+}
+
+@keyframes starwarsRechts {
+  0% {
+    transform: translate( 0, 0);
+  }
+  50% {
+    top: 0;
+    width: 23vw;
+    height: 0.5em;
+    transform: translate(-50vw, 47vh);
+    z-index: 1;
+    border-radius: 0.2em;
+    border: darkgray 1px solid;
+    box-shadow: 0 0 0 black;
+    background-color: gray;
+  }
+  55% {
+    top: 0;
+    width: 0vw;
+    height: 0.5em;
+    transform: translate(-50vw, 47vh);
+    z-index: 1;
+    border-radius: 0.2em;
+    border: none;
+    background-color: gray;
+    box-shadow: 0 0 0 black;
+  }
+  63% {
+    top: 0;
+    width: 0vw;
+    height: 0.5em;
+    transform: translate(-28vw, 47vh);
+    z-index: 1;
+    border-radius: 0.2em;
+    background-color: black;
+    box-shadow: 0 0 0 black;
+  }
+  65% {
+    top: 0;
+    width: 36vw;
+    height: 0.5em;
+    transform: translate(-28vw, 47vh);
+    background-color: red;
+    border-radius: 2em;
+    box-shadow: 0em 0em 1em red;
+    z-index: 1;
+  }
+  100% {
+    top: 0;
+    width: 36vw;
+    height: 0.5em;
+    transform: translate(-28vw, 47vh);
+    background-color: red;
+    border-radius: 2em;
+    box-shadow: 0em 0em 1em red;
+    z-index: 1;
+  }
+}
+
+@keyframes starwarsLinks {
+  0% {
+    transform: translate( 0, 0);
+  }
+  50% {
+    top: 0;
+    width: 23vw;
+    height: 0.5em;
+    transform: translate(-50vw, 47vh);
+    z-index: 1;
+    border-radius: 0.2em;
+    border: darkgray 1px solid;
+    background-color: gray;
+    box-shadow: 0 0 0 black;
+  }
+  55% {
+    top: 0;
+    width: 0vw;
+    height: 0.5em;
+    transform: translate(-50vw, 47vh);
+    z-index: 1;
+    border-radius: 0.2em;
+    border: none;
+    background-color: black;
+    box-shadow: 0 0 0 black;
+  }
+  63% {
+    top: 0;
+    width: 0vw;
+    height: 0.5em;
+    transform: translate(-49vw, 47vh);
+    background-color: red;
+    border-radius: 2em;
+    box-shadow: 0 0 0 black;
+    z-index: 1;
+  }
+  65% {
+    top: 0;
+    width: 36vw;
+    height: 0.5em;
+    transform: translate(-85vw, 47vh);
+    background-color: red;
+    border-radius: 2em;
+    box-shadow: 0em 0em 1em red;
+    z-index: 1;
+  }
+  100% {
+    top: 0;
+    width: 36vw;
+    height: 0.5em;
+    transform: translate(-85vw, 47vh);
+    background-color: red;
+    border-radius: 2em;
+    box-shadow: 0em 0em 1em red;
+    z-index: 1;
+  }
 }
 
 @keyframes dvd {
@@ -825,8 +1028,6 @@ input:focus {
     color: blue;
   }
 }
-
-    /* transform: translate(calc(100vw - 97%), calc(100vh - 100%)) */
 
 /* footer */
 

@@ -696,10 +696,6 @@ section 1 */
   text-align: center;
 }
 
-/* #page2 .section1 section:first-of-type input {
-  width: 100%;
-} */
-
 input {
   line-height: 3em;
   padding: 0 1em;
@@ -719,7 +715,6 @@ input::placeholder {
   font-weight: 400;
 }
 
-/* styling voor search inputs */
 input[type="search"] {
   position:relative;
   padding:0 1em 0 2.5em;
@@ -738,6 +733,7 @@ input:focus {
 
 }
 
+/* dingen voor in zoeken */
 .dvdDIV {
   position: fixed;
   width: 100%;
@@ -776,52 +772,30 @@ input:focus {
   position: fixed;
 }
 
+.starwarsBackground {
+  animation: starwarsVechtenBackground 15s;
+  animation-iteration-count: infinite;
+}
+
 .saberStok {
-  animation: starwarsStok 100s;
+  animation: starwarsStok 34s;
   animation-fill-mode: forwards;
 }
 
 .saberRechts {
-  animation: starwarsRechts 100s;
+  animation: starwarsRechts 34s;
   animation-fill-mode: forwards;
 }
 
 .saberLinks {
-  animation: starwarsLinks 100s;
+  animation: starwarsLinks 34s;
   animation-fill-mode: forwards;
 }
 
-.saberStoktest {
-  top: 0;
-  width: 23vw;
-  height: 0.5em;
-  transform: translate(-50vw, 47vh);
-  z-index: 2;
-  border-radius: 0.2em;
-  border: darkgray 1px solid;
-  background-color: gray;
-}
-
-.saberRechtstest {
-  top: 0;
-  width: 36vw;
-  height: 0.5em;
-  transform: translate(-28vw, 47vh);
-  background-color: red;
-  border-radius: 2em;
-  box-shadow: 0em 0em 1em red;
-  z-index: 1;
-}
-
-.saberLinkstest {
-  top: 0;
-  width: 36vw;
-  height: 0.5em;
-  transform: translate(-85vw, 47vh) scale(-1);
-  background-color: red;
-  border-radius: 2em;
-  box-shadow: 0em 0em 1em red;
-  z-index: 1;
+.zwaaien {
+  animation: starwarsVechten 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes starwarsStok {
@@ -963,6 +937,78 @@ input:focus {
     border-radius: 2em;
     box-shadow: 0em 0em 1em red;
     z-index: 1;
+  }
+}
+
+@keyframes starwarsVechten {
+  0% {
+    transform: translate( 0, 0);
+  }
+  10% {
+    transform: rotate3d(18, 23, -8, 50deg);
+  }
+  20% {
+    transform: rotate3d(44, 43, 57, 38deg) translate(-23vw, 20vh) rotate(20deg);
+  }
+  30% {
+    transform: rotate3d(44, -10, -9, 38deg) translate(23vw, 20vh) rotate(60deg);
+  }
+  40% {
+    transform: rotate3d(15, -10, -9, 41deg) translate(-23vw, 45vh) rotate(30deg);
+  }
+  50% {
+    transform: rotate3d(1, 1, 10, 75deg) translate(10vw, -32vh) rotate(-10deg);
+  }
+  60% {
+    transform: rotate3d(29, 1, 10, 75deg) translate(10vw, 32vh) rotate(20deg);
+  }
+  70% {
+    transform: rotate3d(0, 20, 10, 51deg) translate(37vw, 31vh) rotate(-10deg);
+  }
+  80% {
+    transform: rotate3d(0, 20, 10, 152deg) translate(37vw, 31vh) rotate(-20deg);
+  }
+  90% {
+    transform: rotate3d(0, 20, 10, -57deg) translate(-55vw, 31vh) rotate(0deg);
+  }
+  100% {
+    transform: translate( 0, 0);
+  }
+}
+
+@keyframes starwarsVechtenBackground {
+  0% {
+    box-shadow: inset 0px 1em 30px red;
+  }
+  10% {
+    box-shadow: inset -20px 1.5em 30px red;
+  }
+  20% {
+    box-shadow: inset 20px 1.5em 30px red;
+  }
+  30% {
+    box-shadow: inset 20px 1em 30px red;
+  }
+  40% {
+    box-shadow: inset 20px -1em 30px red;
+  }
+  50% {
+    box-shadow: inset 20px 2em 30px red;
+  }
+  60% {
+    box-shadow: inset 37px 2em 30px red;
+  }
+  70% {
+    box-shadow: inset 11px -2em 30px red;
+  }
+  80% {
+    box-shadow: inset 21px -1em 30px red;
+  }
+  90% {
+    box-shadow: inset -22px -1em 30px red;
+  }
+  100% {
+    box-shadow: inset 0px 1em 30px red;
   }
 }
 

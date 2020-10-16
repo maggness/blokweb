@@ -6,6 +6,7 @@ var deLeukeDingenDiv = document.querySelector('#deLeukeDingen');
 var burger1 = document.querySelector('#burger1');
 var burger2 = document.querySelector('#burger2');
 var burger3 = document.querySelector('#burger3');
+var burgermenu = document.querySelector('#burgermenu');
 
 function zoekenCheck() {
     var zoekenWoord = zoekenInput.value ;
@@ -18,15 +19,27 @@ function zoekenCheck() {
     }
 
     if ( zoekenWoord == "star wars" ) {
-      muziek.src = "sounds/fates.mp3";
+      muziek.src = "sounds/dualfates.mp3";
       muziek.play();
       deLeukeDingenDiv.classList.add("starwars");
       burger1.classList.add("saberLinks");
       burger2.classList.add("saberStok");
       burger3.classList.add("saberRechts");
 
+      setTimeout(function () {
+        burgermenu.classList.add("zwaaien");
+        deLeukeDingenDiv.classList.add("starwarsBackground");
+      },
+      22000
+    );
+
     } else {
       muziek.pause();
+      deLeukeDingenDiv.classList.remove("starwars");
+      burger1.classList.remove("saberLinks");
+      burger2.classList.remove("saberStok");
+      burger3.classList.remove("saberRechts");
+      burgermenu.classList.remove("zwaaien");
     }
   }
 

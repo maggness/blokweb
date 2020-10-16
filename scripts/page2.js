@@ -11,14 +11,14 @@ var burgermenu = document.querySelector('#burgermenu');
 function zoekenCheck() {
     var zoekenWoord = zoekenInput.value ;
 
-    if ( zoekenWoord == "dvd" ) {
+    if ( zoekenWoord == "dvd" || zoekenWoord == "Dvd" || zoekenWoord == "DVD" ) {
       deLeukeDingenDiv.innerHTML = "<p id='dvd' class='dvd dvdAnimatie'>V</p>";
     }
     else {
       deLeukeDingenDiv.innerHTML = "";
     }
 
-    if ( zoekenWoord == "star wars" ) {
+    if ( zoekenWoord == "star wars" || zoekenWoord == "Star wars" || zoekenWoord == "STAR WARS") {
       muziek.src = "sounds/dualfates.mp3";
       muziek.play();
       deLeukeDingenDiv.classList.add("starwars");

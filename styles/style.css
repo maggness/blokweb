@@ -978,37 +978,37 @@ input:focus {
 
 @keyframes starwarsVechtenBackground {
   0% {
-    box-shadow: inset 0px 1em 30px red;
+    box-shadow: inset 0px 1em 30px #FF000080;
   }
   10% {
-    box-shadow: inset -20px 1.5em 30px red;
+    box-shadow: inset -20px 1.5em 30px #FF000080;
   }
   20% {
-    box-shadow: inset 20px 1.5em 30px red;
+    box-shadow: inset 20px 1.5em 30px #FF000080;
   }
   30% {
-    box-shadow: inset 20px 1em 30px red;
+    box-shadow: inset 20px 1em 30px #FF000080;
   }
   40% {
-    box-shadow: inset 20px -1em 30px red;
+    box-shadow: inset 20px -1em 30px #FF000080;
   }
   50% {
-    box-shadow: inset 20px 2em 30px red;
+    box-shadow: inset 20px 2em 30px #FF000080;
   }
   60% {
-    box-shadow: inset 37px 2em 30px red;
+    box-shadow: inset 37px 2em 30px #FF000080;
   }
   70% {
-    box-shadow: inset 11px -2em 30px red;
+    box-shadow: inset 11px -2em 30px #FF000080;
   }
   80% {
-    box-shadow: inset 21px -1em 30px red;
+    box-shadow: inset 21px -1em 30px #FF000080;
   }
   90% {
-    box-shadow: inset -22px -1em 30px red;
+    box-shadow: inset -22px -1em 30px #FF000080;
   }
   100% {
-    box-shadow: inset 0px 1em 30px red;
+    box-shadow: inset 0px 1em 30px #FF000080;
   }
 }
 

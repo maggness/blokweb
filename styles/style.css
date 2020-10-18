@@ -24,177 +24,6 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* bars */
-
-.barsclass {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 54;
-  transform: translateY(-100%);
-}
-
-.barsimg {
-  width: 100%;
-  height: 100%;
-}
-
-.barsanimatie {
-    animation: bars 8s;
-}
-
-@keyframes bars {
-  0% {
-    transform: translateY(-100%);
-  }
-  10%, 90%{
-     transform: translateY(-100%);
-  }
-  50%, 70%{
-    transform: translateY(0);
-  }
-  100%{
-    transform: translateY(-100%);
-  }
-}
-
-/* deur 1 */
-
-.deur1aclass {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: grey;
-  z-index: 55;
-  border: 5px solid #767676;
-  transform: translateX(100%);
-}
-
-.deur1bclass {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: grey;
-  z-index: 55;
-  border: 5px solid #767676;
-  transform: translateX(-100%);
-}
-
-.deur1aanimatie {
-    animation: deur1a 8s;
-}
-
-.deur1banimatie {
-    animation: deur1b 8s;
-}
-
-@keyframes deur1a {
-  0% {
-    transform: translateX(-100%);
-  }
-  30%, 70%{
-     transform: translateX(-100%);
-  }
-  50%, 60%{
-    transform: translateX(-50%);
-  }
-  100%{
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes deur1b {
-  0% {
-    transform: translateX(100%);
-  }
-  30%, 70%{
-     transform: translateX(100%);
-  }
-  50%, 60%{
-    transform: translateX(49%);
-  }
-  100%{
-    transform: translateX(100%);
-  }
-}
-
-/* deur 2 */
-
-.deur2aclass {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: grey;
-  z-index: 56;
-  border: 5px solid #767676;
-  transform: translateY(100%);
-}
-
-.deur2bclass {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: grey;
-  z-index: 56;
-  border: 5px solid #767676;
-  transform: translateY(-150%);
-}
-
-.deur2aanimatie {
-    animation: deur2a 8s;
-}
-
-.deur2banimatie {
-    animation: deur2b 8s;
-}
-
-@keyframes deur2a {
-  0% {
-    transform: translateY(-100%);
-  }
-  40%, 70%{
-     transform: translateY(-100%);
-  }
-  50%, 55% {
-    transform: translateY(-49%);
-  }
-  100%{
-    transform: translateY(-100%);
-  }
-}
-
-@keyframes deur2b {
-  0% {
-    transform: translateY(100%);
-  }
-  40%, 70%{
-     transform: translateY(100%);
-  }
-  50%, 55%{
-    transform: translateY(49%);
-  }
-  100%{
-    transform: translateY(100%);
-  }
-}
-
-
-.easter {
-  animation: egg 4s;
-}
-
-@keyframes egg {
-  0% {
-    transform: rotate3d(0, 0, 0, 0deg) scale(1);
-  }
-  50%{
-     transition: scale(0.1);
-  }
-  100%{
-    transform: rotate3d(1, 1, 1, 360deg) scale(1);
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .easter {
 
@@ -362,7 +191,7 @@ header #menu a {
   background-color: white;
   height: 0.2em;
   width: 1.6em;
-  transition: 0.5s;
+  transition: 0.2s;
 
 }
 
@@ -372,7 +201,7 @@ header #menu a {
   background-color: white;
   height: 0.2em;
   width: 1.6em;
-  transition: 0.5s;
+  transition: 0.2s;
   top: -0.3em;
 }
 
@@ -382,7 +211,7 @@ header #menu a {
   background-color: white;
   height: 0.2em;
   width: 1.6em;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 .burger2rot {
@@ -396,7 +225,7 @@ header #menu a {
   background-color: white;
   height: 0.23em;
   width: 1.6em;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 .burger3rot {
@@ -405,7 +234,7 @@ header #menu a {
   background-color: white;
   height: 0.2em;
   width: 1.6em;
-  transition: 0.5s;
+  transition: 0.2s;
   top: -0.3em;
 }
 
@@ -418,12 +247,12 @@ header #menu a {
   left: 0;
   bottom: 0;
   background-color: #00000010;
-  transition: .2s;
+  transition: 0.2s;
   transform: translateX(100%);
 }
 
 .klapmenuopen {
-  transition: .2s;
+  transition: 0.2s;
   background-color: #000000;
   transform: translateX(0em);
 }
@@ -676,6 +505,10 @@ header #menu a {
 
 /* page 2
 section 1 */
+
+#page2 {
+  transition: 5s;
+}
 
 #page2 .section1 {
   z-index: 1;
@@ -1072,6 +905,99 @@ input:focus {
   100% {
     transform: translate(0, 0);
     color: blue;
+  }
+}
+
+.starfoxvoor {
+  animation: barrelrollvoor 8.5s;
+  animation-timing-function: ease-in-out;
+}
+
+.starfox {
+  animation: barrelroll 8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.starfoxBackground {
+  background: url(../images/starfoxbackground.gif) no-repeat;
+  background-size: 100% 100vh;
+}
+
+@keyframes barrelrollvoor {
+  0% {
+    transform: 0;
+  }
+  100% {
+    transform: perspective(10em) rotateX(60deg) scale(0.3);
+    height: 100vh;
+    width: 100vw;
+    box-shadow: 0em 13em 8em -5em #ff993380;
+  }
+}
+
+@keyframes barrelroll {
+  0% {
+    transform: perspective(10em) rotateX(60deg) scale(0.3);
+    height: 100vh;
+    width: 100vw;
+    box-shadow: 0em 13em 8em -5em #ff993380;
+  }
+  10% {
+    transform: perspective(10em) rotateZ(60deg) rotateX(60deg) scale(0.3);
+    height: 52em;
+    height: 100vh;
+    width: 100vw;
+    box-shadow: 0em 13em 8em -5em #ff993380;
+  }
+  20% {
+    transform: perspective(10em) rotateZ(-60deg) rotateX(60deg) scale(0.3);
+    height: 52em;
+    height: 100vh;
+    width: 100vw;
+    box-shadow: 0em 18em 8em -5em #ff660080;
+  }
+  40% {
+    transform: perspective(10em) rotateZ(359deg) rotateX(60deg) scale(0.3);
+    height: 52em;
+    height: 100vh;
+    width: 100vw;
+    box-shadow: 0em 15em 10em -5em #ffcc0080;
+  }
+  50% {
+    transform: perspective(10em) rotateZ(0deg) rotateX(60deg) scale(0.3);
+    height: 52em;
+    height: 100vh;
+    width: 100vw;
+    box-shadow: 0em 16em 10em -5em #ff993380;
+  }
+  60% {
+    transform: perspective(10em) rotateZ(-50deg) rotateX(60deg) scale(0.3);
+    height: 52em;
+    height: 100vh;
+    width: 100vw;
+    box-shadow: 0em 15em 8em -5em #ff660080;
+  }
+  70% {
+    transform: perspective(10em) rotateZ(50deg) rotateX(60deg) scale(0.3);
+    height: 52em;
+    height: 100vh;
+    width: 100vw;
+    box-shadow: 0em 17em 7em -5em #ffcc0080;
+  }
+  80% {
+    transform: perspective(10em) rotateZ(-400deg) rotateX(60deg) scale(0.3);
+    height: 52em;
+    height: 100vh;
+    width: 100vw;
+    box-shadow: 0em 15em 9em -5em #ff993380;
+  }
+  100% {
+    transform: perspective(10em) rotateZ(0deg) rotateX(60deg) scale(0.3);
+    height: 52em;
+    height: 100vh;
+    width: 100vw;
+    box-shadow: 0em 13em 8em -5em #ff993380;
   }
 }
 

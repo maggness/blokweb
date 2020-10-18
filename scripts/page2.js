@@ -7,6 +7,8 @@ var burger1 = document.querySelector('#burger1');
 var burger2 = document.querySelector('#burger2');
 var burger3 = document.querySelector('#burger3');
 var burgermenu = document.querySelector('#burgermenu');
+var mainPage2 = document.querySelector('#page2');
+var body = document.body
 
 function zoekenCheck() {
     var zoekenWoord = zoekenInput.value ;
@@ -41,6 +43,24 @@ function zoekenCheck() {
       burger3.classList.remove("saberRechts");
       burgermenu.classList.remove("zwaaien");
     }
+
+    if ( zoekenWoord == "do a barrel roll" || zoekenWoord == "Do a barrel roll" || zoekenWoord == "doabarrelroll" || zoekenWoord == "Doabarrelroll" ) {
+      body.classList.add("starfoxBackground");
+      mainPage2.classList.add("starfoxvoor");
+
+      setTimeout(function () {
+        mainPage2.classList.remove("starfoxvoor");
+        mainPage2.classList.add("starfox");
+      },
+      8000
+    );
+    }
+    else {
+      body.classList.remove("starfoxBackground");
+      mainPage2.classList.remove("starfoxvoor");
+      mainPage2.classList.remove("starfox");
+    }
+
   }
 
 

@@ -930,7 +930,7 @@ input:focus {
   }
   100% {
     transform: perspective(10em) rotateX(60deg) scale(0.3);
-    height: 100vh;
+    height: 38em;
     width: 100vw;
     box-shadow: 0em 13em 8em -5em #ff993380;
   }
@@ -939,63 +939,55 @@ input:focus {
 @keyframes barrelroll {
   0% {
     transform: perspective(10em) rotateX(60deg) scale(0.3);
-    height: 100vh;
+    height: 38em;
     width: 100vw;
     box-shadow: 0em 13em 8em -5em #ff993380;
   }
   10% {
     transform: perspective(10em) rotateZ(60deg) rotateX(60deg) scale(0.3);
-    height: 52em;
-    height: 100vh;
+    height: 38em;
     width: 100vw;
     box-shadow: 0em 13em 8em -5em #ff993380;
   }
   20% {
     transform: perspective(10em) rotateZ(-60deg) rotateX(60deg) scale(0.3);
-    height: 52em;
-    height: 100vh;
+    height: 38em;
     width: 100vw;
     box-shadow: 0em 18em 8em -5em #ff660080;
   }
   40% {
     transform: perspective(10em) rotateZ(359deg) rotateX(60deg) scale(0.3);
-    height: 52em;
-    height: 100vh;
+    height: 38em;
     width: 100vw;
     box-shadow: 0em 15em 10em -5em #ffcc0080;
   }
   50% {
     transform: perspective(10em) rotateZ(0deg) rotateX(60deg) scale(0.3);
-    height: 52em;
-    height: 100vh;
+    height: 38em;
     width: 100vw;
     box-shadow: 0em 16em 10em -5em #ff993380;
   }
   60% {
     transform: perspective(10em) rotateZ(-50deg) rotateX(60deg) scale(0.3);
-    height: 52em;
-    height: 100vh;
+    height: 38em;
     width: 100vw;
     box-shadow: 0em 15em 8em -5em #ff660080;
   }
   70% {
     transform: perspective(10em) rotateZ(50deg) rotateX(60deg) scale(0.3);
-    height: 52em;
-    height: 100vh;
+    height: 38em;
     width: 100vw;
     box-shadow: 0em 17em 7em -5em #ffcc0080;
   }
   80% {
     transform: perspective(10em) rotateZ(-400deg) rotateX(60deg) scale(0.3);
-    height: 52em;
-    height: 100vh;
+    height: 38em;
     width: 100vw;
     box-shadow: 0em 15em 9em -5em #ff993380;
   }
   100% {
     transform: perspective(10em) rotateZ(0deg) rotateX(60deg) scale(0.3);
-    height: 52em;
-    height: 100vh;
+    height: 38em;
     width: 100vw;
     box-shadow: 0em 13em 8em -5em #ff993380;
   }

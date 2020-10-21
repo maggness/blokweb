@@ -7,29 +7,36 @@
 1. https://www.w3schools.com/
 2. de lessen
 3. https://css-tricks.com/
-
+4. http://sinds1971.nl/
+5. https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
+6. https://stackoverflow.com/questions/22928819/override-the-webkit-search-cancel-button
 
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+Ik heb lekker gewerkt aan de site. In het begin was het lastig om alles goed op ze plek te krijgen zoals ze op de Spotify site hebben maar uiteindelijk is dit wel goed gelukt.
+Ook heb ik wat domme dingen toegevoegd aan de 2e pagina omdat ik wat ideeën had en benieuwd was of ik het kon maken. Je kan deze dingen testen door deze dingen te typen:
+dvd, star wars, tiny, do a barrel roll.
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
+![Eindresultaat pagina 1](images/eind1.PNG)
+![Uitklap menu open](images/eind4.PNG)
+![Eindresultaat pagina 1](images/eind6.PNG)
+![Eindresultaat pagina 2](images/eind2.PNG)
+![Eindresultaat pagina 2 met de menu's open](images/eind3.PNG)
+![Eindresultaat pagina 2 zoekbalk](images/eind5.PNG)
 
 
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
-
+Ik ben bezig met pagina 2. Hier heb je een zoekbalk en heb hier wat stomme kleine ideeën voor dus ik hoop dat het me lukt om die te maken. Ik heb ook de code op de eerste pagina nu allemaal verbeterd.
 
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
-
+Ik heb de eerste pagina bijna af, ik moet de navigatie even laten werken en dan kan ik beginnen aan pagina 2. Ik heb wel nog wat code te verbeteren omdat ik het niet helemaal heb gedaan zoals het hoort.
 
 
 ## Voortgang 1 (week 3)
@@ -43,6 +50,8 @@ Het is soms wel even kijken om het goed responsive te krijgen, maar tot nu toe i
 
 28/9/2020 Ik zat eventjes vast op een probleem met horizontaal scrollen maar dit probleem is gelukkig opgelost. Heb ook een kleine easter egg op de site gezet omdat ik daar even zin in had. Ik moet nu de albums nog even goed invullen en alles een beetje goed namaken en dan kan ik beginnen aan de 2e section.
 
+5/10/2020
+
 **Screenshot(s):**
 
 ![Progressie 16/9/2020](images/prog1.PNG)
@@ -50,11 +59,7 @@ Het is soms wel even kijken om het goed responsive te krijgen, maar tot nu toe i
 
 ### Agenda voor meeting
 
-Naomi: voorbeelden van states
-Tim: voorbeelden van states
-Saphia: afbeeldingen na h1, javascript
-Joris: naar code kijken effectief? +-10 min.
-Martine: naar code laten kijken
+Eindgesprek
 
 ### Verslag van meeting
 

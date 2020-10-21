@@ -8,10 +8,11 @@ Speciaal font voor DVD
 Bron: https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website */
 @font-face {
     font-family: 'digitalsymbolsregular';
-    src: url('dvd-webfont.woff2') format('woff2'),
-         url('dvd-webfont.woff') format('woff');
+    src: url('../fonts/dvd-webfont.woff2') format('woff2'),
+         url('../fonts/dvd-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
 }
 
 body {
@@ -22,75 +23,6 @@ body {
   right: 0;
   left: 0;
   -webkit-tap-highlight-color: transparent;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .easter {
-
-  }
-
-  .burger1 {
-    top: -0.8em;
-    position: absolute;
-    background-color: white;
-    height: 0.2em;
-    width: 1.4em;
-  }
-
-  .burger1rot {
-    transform: rotate(-50deg);
-    position: absolute;
-    background-color: white;
-    height: 0.2em;
-    width: 1.4em;
-    top: -0.3em;
-  }
-
-  .burger2 {
-    top: -0.3em;
-    position: absolute;
-    background-color: white;
-    height: 0.2em;
-    width: 1.4em;
-  }
-
-  .burger2rot {
-    opacity: 0;
-  }
-
-  .burger3 {
-    top: 0.2em;
-    position: absolute;
-    background-color: white;
-    height: 0.23em;
-    width: 1.4em;
-  }
-
-  .burger3rot {
-    transform: rotate(50deg);
-    position: absolute;
-    background-color: white;
-    height: 0.2em;
-    width: 1.4em;
-    top: -0.3em;
-  }
-
-  .klapmenudicht {
-    position: fixed;
-    z-index: 49;
-    width: 100%;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: #00000010;
-    transform: translateX(100%);
-  }
-
-  .klapmenuopen {
-    background-color: #000000;
-    transform: translateX(0em);
-  }
 }
 
 /* header */
@@ -162,15 +94,29 @@ header nav img {
 
 header #menu a {
   width: 5.6em;
-  bottom: 4.1em;
   font-size: 1.5em;
   left: 1.5em;
   top: 3em;
   position: absolute;
   color: white;
   text-decoration: none;
+  transition: 0.1s
 }
 
+header #menu a:focus {
+  outline: none
+  color: #1ed760;
+}
+
+header #menu a:active {
+  transition: 0s;
+  border: none;
+  color: #1ed760;
+}
+
+header #menu a:hover {
+  text-shadow: 0.08em 0.05em 0 #1ed76090;
+}
 
 /* hamburger menu */
 
@@ -185,6 +131,14 @@ header #menu a {
   outline: none;
 }
 
+#burgermenu:hover {
+  transform: scale(1.1);
+}
+
+#burgermenu:focus {
+  transform: scale(1.1);
+}
+
 .burger1 {
   top: -0.8em;
   position: absolute;
@@ -192,16 +146,10 @@ header #menu a {
   height: 0.2em;
   width: 1.6em;
   transition: 0.2s;
-
 }
 
 .burger1rot {
   transform: rotate(-50deg);
-  position: absolute;
-  background-color: white;
-  height: 0.2em;
-  width: 1.6em;
-  transition: 0.2s;
   top: -0.3em;
 }
 
@@ -216,7 +164,6 @@ header #menu a {
 
 .burger2rot {
   opacity: 0;
-  transition: 0.2s;
 }
 
 .burger3 {
@@ -230,11 +177,6 @@ header #menu a {
 
 .burger3rot {
   transform: rotate(50deg);
-  position: absolute;
-  background-color: white;
-  height: 0.2em;
-  width: 1.6em;
-  transition: 0.2s;
   top: -0.3em;
 }
 
@@ -249,17 +191,17 @@ header #menu a {
   background-color: #00000010;
   transition: 0.2s;
   transform: translateX(100%);
+  opacity: 0;
 }
 
 .klapmenuopen {
   transition: 0.2s;
   background-color: #000000;
   transform: translateX(0em);
+  opacity: 1;
 }
 
-
 /* main */
-
 /* 1e section */
 
 #page1 .section1 {
@@ -323,8 +265,23 @@ header #menu a {
   width: 15em;
   margin: 2em 0;
   font-weight: 600;
+  transition: 0.2s
 }
 
+#page1 .section1 section:first-of-type button:hover {
+  background-color: #1ED760;
+  transition: 0.2s
+}
+
+#page1 .section1 section:first-of-type button:focus {
+  background-color: #1ED760;
+  transition: 0.2s
+}
+
+#page1 .section1 section:first-of-type button:active {
+  transform: scale(1.05);
+  transition: 0.2s
+}
 
 /* Ul */
 
@@ -399,7 +356,7 @@ header #menu a {
 
 /* 2e section */
 
-.section2 {
+#page1 .section2 {
   z-index: 1;
   justify-content: center;
   display: flex;
@@ -512,10 +469,11 @@ section 1 */
 
 #page2 .section1 {
   z-index: 1;
-  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   position: relative;
+
+  /* achtergrond van spotify gehaald */
   background: url(https://support.scdn.co/web/_next/static/assets/6f8ae0e/search-mobile.webp) top/100% no-repeat #1c2963;
   height: 38.5em;
   margin: 0;
@@ -523,7 +481,7 @@ section 1 */
 
 #page2 .section1 section:first-of-type h1 {
   font-size: 2.8em;
-  margin: 2.3em 0.5em 0 0.5em;
+  margin: 2em 0.5em 0 0.5em;
   font-weight: 700;
   line-height: 1.2em;
   text-align: center;
@@ -540,6 +498,7 @@ input {
   appearance: none;
   width: 95%;
   margin: 2em 0 0 0.6em;
+  transition: 0.1s
 }
 
 input::placeholder {
@@ -559,14 +518,32 @@ input[type="search"] {
 
 /* states voor alle inputs */
 input:hover {
-
+  box-shadow: 0.5em 0.5em 1em black;
 }
 
 input:focus {
-
+  box-shadow: 0.5em 0.5em 1em black;
+  transform: scale(1.03);
 }
 
-/* dingen voor in zoeken */
+/* bron: https://stackoverflow.com/questions/22928819/override-the-webkit-search-cancel-button
+dit is om het kruisje te veranderen bij de zoekbalk*/
+input[type="search"]::-webkit-search-cancel-button {
+
+  /* Remove default */
+  -webkit-appearance: none;
+
+  background-repeat:no-repeat;
+  background-size:1.25em auto;
+  background-position: 0 center;
+  position:relative;
+  right: 0;
+  height: 17px;
+  width: 17px;
+  background-image: url("../images/kruis2.png");
+}
+
+/*de leuke dingen voor in zoeken */
 .dvdDIV {
   position: fixed;
   width: 100%;
@@ -929,7 +906,7 @@ input:focus {
     transform: 0;
   }
   100% {
-    transform: perspective(10em) rotateX(60deg) scale(0.3);
+    transform: perspective(10em) rotateX(60deg) scale(0.21);
     height: 38em;
     width: 100vw;
     box-shadow: 0em 13em 8em -5em #ff993380;
@@ -938,59 +915,165 @@ input:focus {
 
 @keyframes barrelroll {
   0% {
-    transform: perspective(10em) rotateX(60deg) scale(0.3);
+    transform: perspective(10em) rotateX(60deg) scale(0.21);
     height: 38em;
     width: 100vw;
     box-shadow: 0em 13em 8em -5em #ff993380;
   }
   10% {
-    transform: perspective(10em) rotateZ(60deg) rotateX(60deg) scale(0.3);
+    transform: perspective(10em) rotateZ(60deg) rotateX(60deg) scale(0.21);
     height: 38em;
     width: 100vw;
     box-shadow: 0em 13em 8em -5em #ff993380;
   }
   20% {
-    transform: perspective(10em) rotateZ(-60deg) rotateX(60deg) scale(0.3);
+    transform: perspective(10em) rotateZ(-60deg) rotateX(60deg) scale(0.21);
     height: 38em;
     width: 100vw;
     box-shadow: 0em 18em 8em -5em #ff660080;
   }
   40% {
-    transform: perspective(10em) rotateZ(359deg) rotateX(60deg) scale(0.3);
+    transform: perspective(10em) rotateZ(359deg) rotateX(60deg) scale(0.21);
     height: 38em;
     width: 100vw;
     box-shadow: 0em 15em 10em -5em #ffcc0080;
   }
   50% {
-    transform: perspective(10em) rotateZ(0deg) rotateX(60deg) scale(0.3);
+    transform: perspective(10em) rotateZ(0deg) rotateX(60deg) scale(0.21);
     height: 38em;
     width: 100vw;
     box-shadow: 0em 16em 10em -5em #ff993380;
   }
   60% {
-    transform: perspective(10em) rotateZ(-50deg) rotateX(60deg) scale(0.3);
+    transform: perspective(10em) rotateZ(-50deg) rotateX(60deg) scale(0.21);
     height: 38em;
     width: 100vw;
     box-shadow: 0em 15em 8em -5em #ff660080;
   }
   70% {
-    transform: perspective(10em) rotateZ(50deg) rotateX(60deg) scale(0.3);
+    transform: perspective(10em) rotateZ(50deg) rotateX(60deg) scale(0.21);
     height: 38em;
     width: 100vw;
     box-shadow: 0em 17em 7em -5em #ffcc0080;
   }
   80% {
-    transform: perspective(10em) rotateZ(-400deg) rotateX(60deg) scale(0.3);
+    transform: perspective(10em) rotateZ(-400deg) rotateX(60deg) scale(0.21);
     height: 38em;
     width: 100vw;
     box-shadow: 0em 15em 9em -5em #ff993380;
   }
   100% {
-    transform: perspective(10em) rotateZ(0deg) rotateX(60deg) scale(0.3);
+    transform: perspective(10em) rotateZ(0deg) rotateX(60deg) scale(0.21);
     height: 38em;
     width: 100vw;
     box-shadow: 0em 13em 8em -5em #ff993380;
   }
+}
+
+.tiny {
+  transform: scale(0.3);
+}
+
+/* section 2 */
+
+#page2 .section1 h2:first-of-type {
+  color: #d9d9d9;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  margin: 0;
+  font-size: 0.8em;
+}
+
+#page2 .section1 ul:first-of-type {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#page2 .section1 ul:first-of-type li {
+  margin: 1.2em 0 0 0.5em;
+}
+
+#page2 .section1 ul:first-of-type li h3 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.1em;
+  line-height: 1.4em;
+}
+
+/* section 2 */
+
+#page2 .section2 button {
+  width: 100%;
+  display: flex;
+  font-family: 'Kumbh Sans', sans-serif;
+  color: black;
+  background-color: white;
+  border: 1px solid #c1c3c6;
+  outline: none;
+  font-size: 1.2em;
+  height: 3em;
+  font-weight: 600;
+  transition: 0.2s;
+  position: relative;
+  justify-content: space-between;
+  z-index: 50;
+}
+
+#page2 .section2 button h3 {
+  margin: 0;
+  font-size: 1em;
+  left: 1em;
+  top: 1em;
+  position: absolute;
+  }
+
+#page2 .section2 button img {
+  margin: 0;
+  width: 0.7em;
+  position: absolute;
+  right: 1em;
+  top: 1.1em;
+}
+
+#page2 .section2 button div {
+  background-image: url(../images/pijl2.png);
+  margin: 0;
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  right: 1em;
+  top: 1.1em;
+  background-size: 1em;
+}
+
+#page2 .section2 button .pijlopen {
+  background-image: url(../images/pijl.png);
+}
+
+#page2 .section2 ul {
+  color: #2d46b9;
+  transition: 0.2s;
+  background-color: #eee;
+  list-style: none;
+  margin: 0;
+  padding: 0.6em 0 0.6em 1em;
+}
+
+#page2 .section2 ul li {
+  line-height: 2.2em;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+#page2 .section2 .uldicht {
+  color: transparent;
+  transition: 0s;
+  height: 0;
+  padding: 0 0 0 1em;
+  transform: translateY(-100%);
+  z-index: 100;
 }
 
 /* footer */

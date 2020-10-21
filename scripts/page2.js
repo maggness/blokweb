@@ -8,6 +8,15 @@ var burger2 = document.querySelector('#burger2');
 var burger3 = document.querySelector('#burger3');
 var burgermenu = document.querySelector('#burgermenu');
 var mainPage2 = document.querySelector('#page2');
+var betalenButtonklik = document.querySelector('#betalen');
+var betalenUlHeel = document.querySelector('#betalenUl');
+var pijltjeImg = document.querySelector('#pijltje');
+var gebruikenButtonklik = document.querySelector('#gebruiken');
+var gebruikenUlHeel = document.querySelector('#gebruikenUl');
+var pijltjeImg2 = document.querySelector('#pijltje2');
+var luisterenButtonklik = document.querySelector('#luisteren');
+var luisterenUlHeel = document.querySelector('#luisterenUl');
+var pijltjeImg3 = document.querySelector('#pijltje3');
 var body = document.body
 
 function zoekenCheck() {
@@ -61,7 +70,32 @@ function zoekenCheck() {
       mainPage2.classList.remove("starfox");
     }
 
+    if ( zoekenWoord == "tiny" || zoekenWoord == "Tiny") {
+      body.classList.add("tiny");
+    }
+    else {
+      body.classList.remove("tiny");
+    }
+
+  }
+
+  function betalenPress() {
+    betalenUlHeel.classList.toggle('uldicht');
+    pijltjeImg.classList.toggle('pijlopen')
+  }
+
+  function gebruikenPress() {
+    gebruikenUlHeel.classList.toggle('uldicht');
+    pijltjeImg2.classList.toggle('pijlopen')
+  }
+
+  function luisterenPress() {
+    luisterenUlHeel.classList.toggle('uldicht');
+    pijltjeImg3.classList.toggle('pijlopen')
   }
 
 
 zoekenInput.addEventListener("input", zoekenCheck);
+betalenButtonklik.addEventListener("click", betalenPress);
+gebruikenButtonklik.addEventListener("click", gebruikenPress);
+luisterenButtonklik.addEventListener("click", luisterenPress);

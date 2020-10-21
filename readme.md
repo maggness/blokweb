@@ -22,9 +22,7 @@ dvd, star wars, tiny, do a barrel roll.
 **Screenshot(s):**
 
 ![Eindresultaat pagina 1](images/eind1.PNG)
-Eindresultaat van pagina 1
 ![Uitklap menu open](images/eind4.PNG)
-het hamburgermenu als het open is
 ![Eindresultaat pagina 2](images/eind2.PNG)
 ![Eindresultaat pagina 2 met de menu's open](images/eind3.PNG)
 ![Eindresultaat pagina 2 zoekbalk](images/eind5.PNG)

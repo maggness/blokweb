@@ -25,8 +25,6 @@ dvd, star wars, tiny, do a barrel roll.
 ![Uitklap menu open](images/eind4.PNG)
 ![Eindresultaat pagina 2](images/eind2.PNG)
 ![Eindresultaat pagina 2 met de menu's open](images/eind3.PNG)
-![Eindresultaat pagina 2 zoekbalk](images/eind5.PNG)
-
 
 
 ## Voortgang 3 (week 6)

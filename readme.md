@@ -15,14 +15,16 @@
 ## Eindgesprek (week 7/8)
 
 Ik heb lekker gewerkt aan de site. In het begin was het lastig om alles goed op ze plek te krijgen zoals ze op de Spotify site hebben maar uiteindelijk is dit wel goed gelukt.
-Ook heb ik wat domme dingen toegevoegd aan de 2e pagina omdat ik wat ideeën had en benieuwd was of ik het kon maken. Je kan deze dingen testen door deze dingen te typen:
+Ook heb ik wat domme dingen toegevoegd aan de 2e pagina omdat ik wat ideeën had en benieuwd was of ik het kon maken. Je kan dit zien door deze dingen te typen in de zoekbalk:
 dvd, star wars, tiny, do a barrel roll.
+
 
 **Screenshot(s):**
 
 ![Eindresultaat pagina 1](images/eind1.PNG)
+Eindresultaat van pagina 1
 ![Uitklap menu open](images/eind4.PNG)
-![Eindresultaat pagina 1](images/eind6.PNG)
+het hamburgermenu als het open is
 ![Eindresultaat pagina 2](images/eind2.PNG)
 ![Eindresultaat pagina 2 met de menu's open](images/eind3.PNG)
 ![Eindresultaat pagina 2 zoekbalk](images/eind5.PNG)
@@ -50,7 +52,7 @@ Het is soms wel even kijken om het goed responsive te krijgen, maar tot nu toe i
 
 28/9/2020 Ik zat eventjes vast op een probleem met horizontaal scrollen maar dit probleem is gelukkig opgelost. Heb ook een kleine easter egg op de site gezet omdat ik daar even zin in had. Ik moet nu de albums nog even goed invullen en alles een beetje goed namaken en dan kan ik beginnen aan de 2e section.
 
-5/10/2020
+15/10/2020 Ben even druk bezig geweest en heb een deel van pagina 2. Was even aan het denken hoe ik het allemaal in de css wilde gaan doen want ik wilde geen 2e css file aan maken. Ik heb ervoor gekozen om mijn main een id te geven. Zo kan ik in de css de main van page 1 en page 2 aanroepen.
 
 **Screenshot(s):**
 
@@ -63,7 +65,7 @@ Eindgesprek
 
 ### Verslag van meeting
 
-We zijn begonnen met de meeting en hebben het gehad over de vragen. We hadden niet veel vragen dus de meeting ging snel.
+Ik had niet altijd veel vragen bij de metingen maar heb er wel veel van opgepikt en meegenomen. Het was handig om mee te luisteren met de vragen van anderen. Ook was het fijn om met andere mensen naar je code te kijken, zo worden er toch altijd wel handige dingen aangewezen.
 
 ## Intake (week 1)
 

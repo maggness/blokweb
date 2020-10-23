@@ -1,0 +1,264 @@
+body {
+  overflow: hidden;
+}
+
+.imgDiv {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+}
+
+.imgDiv::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: -1;
+  background: url(../images/waste2.png) 9vw 66vh no-repeat;
+  transform: rotate(-74deg) scale(1.5);
+  /* animation: tekstAnimatie 70s; */
+}
+
+@keyframes tekstAnimatie {
+  0% {
+    /* Fuck love */
+    background: url(../images/waste2.png) 9vw 66vh no-repeat;
+    transform: rotate(-74deg) scale(1.5);
+  }
+  2% {
+    /* I don't want none */
+    background: url(../images/waste2.png) -4vw 44vh no-repeat;
+    transform: rotate(-74deg) scale(1.5);
+  }
+  4% {
+    /* I don't want love */
+    background: url(../images/waste2.png) -23vw 14vh no-repeat;
+    transform: rotate(-74deg) scale(1.5);
+  }
+  6% {
+    background: url(../images/waste2.png) -49vw 27vh no-repeat;
+        transform: rotate(75deg) scale(1.2);
+  }
+  8% {
+    background: url(../images/waste2.png) -57vw 42vh no-repeat;
+    transform: rotate(75deg) scale(3.2);
+  }
+  10% {
+    background: url(../images/waste2.png) -64vw 53vh no-repeat;
+    transform: rotate(75deg) scale(3.2);
+  }
+  12% {
+    background: url(../images/waste2.png) -71vw 64vh no-repeat;
+    transform: rotate(75deg) scale(3.2);
+  }
+  14% {
+    background: url(../images/waste2.png) -83vw 51vh no-repeat;
+    transform: rotate(-76deg) scale(1.6);
+  }
+  16% {
+    background: url(../images/waste2.png) -99vw 22vh no-repeat;
+    transform: rotate(-75deg) scale(1.6);
+  }
+  18% {
+    background: url(../images/waste2.png) -128vw 35vh no-repeat;
+    transform: rotate(78deg) scale(1.3);
+  }
+  20% {
+    background: url(../images/waste2.png) -182vw 20vh no-repeat;
+    transform: rotate(90deg) scale(1.2);
+  }
+  22% {
+    background: url(../images/waste2.png) -182vw 52vh no-repeat;
+    transform: rotate(90deg) scale(1.2);
+  }
+  24% {
+    background: url(../images/waste2.png) -209vw 33.8vh no-repeat;
+    transform: rotate(0deg) scale(2.4);
+  }
+  26% {
+    background: url(../images/waste2.png) -245vw 33.8vh no-repeat;
+    transform: rotate(0deg) scale(2.4);
+  }
+  28% {
+    background: url(../images/waste2.png) -272vw 47.8vh no-repeat;
+    transform: rotate(-90deg) scale(1.2);
+  }
+  30% {
+    background: url(../images/waste2.png) -272vw 17.8vh no-repeat;
+    transform: rotate(-90deg) scale(1.2);
+  }
+  32% {
+    background: url(../images/waste2.png) -319vw 13.8vh no-repeat;
+    transform: rotate(72deg) scale(1.2);
+  }
+  34% {
+    background: url(../images/waste2.png) -339vw 41.8vh no-repeat;
+    transform: rotate(72deg) scale(1.2);
+  }
+  36% {
+    background: url(../images/waste2.png) -353vw 62.8vh no-repeat;
+    transform: rotate(72deg) scale(2.2);
+  }
+  38% {
+    background: url(../images/waste2.png) -379vw 40.8vh no-repeat;
+    transform: rotate(-70.3deg) scale(1.2);
+  }
+  40% {
+    background: url(../images/waste2.png) -399vw 14.8vh no-repeat;
+    transform: rotate(-70.3deg) scale(1.2);
+  }
+  42% {
+    background: url(../images/waste2.png) -459vw 63vh no-repeat;
+    transform: rotate(0deg) scale(0.8);
+  }
+  44% {
+    background: url(../images/waste2.png) -457vw 42vh no-repeat;
+    transform: rotate(-90deg) scale(1.2);
+  }
+  46% {
+    background: url(../images/waste2.png) -457vw 13vh no-repeat;
+    transform: rotate(-90deg) scale(1.2);
+  }
+  48% {
+    background: url(../images/waste2.png) -579vw 15vh no-repeat;
+    transform: rotate(71deg) scale(1.2);
+  }
+  50% {
+    background: url(../images/waste2.png) -602vw 47vh no-repeat;
+    transform: rotate(71deg) scale(1.2);
+  }
+  52% {
+    background: url(../images/waste2.png) -637vw 44vh no-repeat;
+    transform: rotate(-72deg) scale(1.2);
+  }
+  54% {
+    background: url(../images/waste2.png) -660vw 11vh no-repeat;
+    transform: rotate(-72deg) scale(1.2);
+  }
+  56% {
+    background: url(../images/waste2.png) -674vw -9vh no-repeat;
+    transform: rotate(-72deg) scale(1.2);
+  }
+  58% {
+    background: url(../images/waste2.png) -736vw 62vh no-repeat;
+    transform: rotate(-77deg) scale(1.2);
+  }
+  60% {
+    background: url(../images/waste2.png) -753vw 27vh no-repeat;
+    transform: rotate(-77deg) scale(1.2);
+  }
+  62% {
+    background: url(../images/waste2.png) -758vw 16vh no-repeat;
+    transform: rotate(-77deg) scale(1.2);
+  }
+  64% {
+    background: url(../images/waste2.png) -783vw 23vh no-repeat;
+    transform: rotate(73deg) scale(1.2);
+  }
+  66% {
+    background: url(../images/waste2.png) -802vw 53vh no-repeat;
+    transform: rotate(73deg) scale(1.2);
+  }
+  68% {
+    background: url(../images/waste2.png) -824vw 45vh no-repeat;
+    transform: rotate(-79deg) scale(1.2);
+  }
+  70% {
+    background: url(../images/waste2.png) -836vw 14vh no-repeat;
+    transform: rotate(-79deg) scale(1.2);
+  }
+  72% {
+    background: url(../images/waste2.png) -859vw 25vh no-repeat;
+    transform: rotate(74deg) scale(1.2);
+  }
+  74% {
+    background: url(../images/waste2.png) -875vw 51vh no-repeat;
+    transform: rotate(74deg) scale(1.2);
+  }
+  76% {
+    background: url(../images/waste2.png) -914vw 20vh no-repeat;
+    transform: rotate(71deg) scale(1.2);
+  }
+  78% {
+    background: url(../images/waste2.png) -938vw 52vh no-repeat;
+    transform: rotate(71deg) scale(1.7);
+  }
+  80% {
+    background: url(../images/waste2.png) -965vw 47vh no-repeat;
+    transform: rotate(-73deg) scale(1.7);
+  }
+  81% {
+    background: url(../images/waste2.png) -965vw 47vh no-repeat;
+    transform: rotate(-73deg) scale(1.7);
+  }
+  82% {
+    background: url(../images/waste2.png) -987vw 14vh no-repeat;
+    transform: rotate(-73deg) scale(1.2);
+  }
+  83% {
+    background: url(../images/waste2.png) -1053vw 3vh no-repeat;
+    transform: rotate(13deg) scale(1.2);
+  }
+  84% {
+    background: url(../images/waste2.png) -1098vw 13.5vh no-repeat;
+    transform: rotate(79deg) scale(3.2);
+  }
+  85% {
+    background: url(../images/waste2.png) -1069vw 31.5vh no-repeat;
+    transform: rotate(-35deg) scale(1.3);
+  }
+  86% {
+    background: url(../images/waste2.png) -1034vw 53.5vh no-repeat;
+    transform: rotate(87deg) scale(1.3);
+  }
+  87% {
+    background: url(../images/waste2.png) -1065vw 71.5vh no-repeat;
+    transform: rotate(0deg) scale(1.8);
+  }
+  88% {
+    background: url(../images/waste2.png) -1091vw 66vh no-repeat;
+    transform: rotate(-41deg) scale(2.8);
+  }
+  89% {
+    background: url(../images/waste2.png) -1167vw 63vh no-repeat;
+    transform: rotate(0deg) scale(0.9);
+  }
+  90% {
+    background: url(../images/waste2.png) -1164vw 30vh no-repeat;
+    transform: rotate(-90deg) scale(0.9);
+  }
+  91% {
+    background: url(../images/waste2.png) -1281vw 3vh no-repeat;
+    transform: rotate(0deg) scale(0.85);
+  }
+  92% {
+    background: url(../images/waste2.png) -1243vw 26vh no-repeat;
+    transform: rotate(90deg) scale(1.2);
+  }
+  93% {
+    background: url(../images/waste2.png) -1243vw 54vh no-repeat;
+    transform: rotate(90deg) scale(1.4);
+  }
+  94% {
+    background: url(../images/waste2.png) -1289vw 62vh no-repeat;
+    transform: rotate(0deg) scale(1.3);
+  }
+  95% {
+    background: url(../images/waste2.png) -1288vw 33vh no-repeat;
+    transform: rotate(0deg) scale(1.2);
+  }
+  100% {
+    background: url(../images/waste2.png) -1288vw 33vh no-repeat;
+    transform: rotate(0deg) scale(1.2);
+  }
+}
